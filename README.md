@@ -9,22 +9,24 @@ O pygame tem duas formas de representar formas retângulares:
 
 - Tupla de quatro inteiros:
 
-  1. A coordenada X do canto superior esquerdo. 
-  2. A coordenada Y do canto superior esquerdo.
-  3. A largura (em pixels) do retângulo.
-  4. A altura (em pixels) do retângulo.
+  * A coordenada X do canto superior esquerdo. 
+  * A coordenada Y do canto superior esquerdo.
+  * A largura (em pixels) do retângulo.
+  * A altura (em pixels) do retângulo.
   
  - Objetos do tipo pygame.Rect
+   O uso de objetos Rect é o calculo automatico das coordenadas para outras características do retângulo. 
+   Se você reatribuir algum atribut todos os outros são automaticamente recalculados.
  
   ```python
   import pygame
   spamRect = pygame.Rect(10, 20, 200, 300)
   ```
-
+Lista de todos os atributos que os objetos pygame.Rect fornecem
 | Nome do atributo  | Descrição |
 | ------------- | ------------- |
 | myRect.left |  O valor inteiro da coordenada X do lado esquerdo do retângulo.|
-| myRect.right | TO valor inteiro da coordenada X do lado direito do retângulo. |
+| myRect.right | O valor inteiro da coordenada X do lado direito do retângulo. |
 | myRect.top | O valor inteiro da coordenada Y do lado esquerdo do retângulo. |
 |myRect.bottom | O valor inteiro da coordenada Y do lado direito do retângulo. |
 |myRect.centerx | O valor inteiro da coordenada X do centro do retângulo. |
