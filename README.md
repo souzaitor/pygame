@@ -15,13 +15,15 @@ O pygame tem duas formas de representar formas retângulares:
   * A altura (em pixels) do retângulo.
   
  - Objetos do tipo pygame.Rect
-   O uso de objetos Rect é o calculo automatico das coordenadas para outras características do retângulo. 
-   Se você reatribuir algum atribut todos os outros são automaticamente recalculados.
+ O uso de objetos Rect é o calculo automatico das coordenadas para outras características do retângulo. 
+ Se você reatribuir algum atributo todos os outros são automaticamente recalculados.
+ 
  
   ```python
   import pygame
   spamRect = pygame.Rect(10, 20, 200, 300)
   ```
+
 Lista de todos os atributos que os objetos pygame.Rect fornecem
 | Nome do atributo  | Descrição |
 | ------------- | ------------- |
@@ -42,3 +44,5 @@ Lista de todos os atributos que os objetos pygame.Rect fornecem
 |myRect.midright |Uma tupla de dois inteiros: (right, centery) |
 |myRect.midtop |Uma tupla de dois inteiros: (centerx, top)|
 |myRect.midbottom |Uma tupla de dois inteiros: (centerx, bottom) |
+
+## 
